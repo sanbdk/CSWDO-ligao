@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSWDO Ligao - Educational Scholarship Requirements</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Smooth fade-in animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Top Navigation Bar -->
+<header class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <div class="w-14 h-14 rounded-full overflow-hidden shadow-md ring-2 ring-blue-500">
+          <img src="cswdo-logo.png" alt="CSWDO Logo" class="object-cover w-full h-full">
+        </div>
+        <div>
+          <h1 class="text-2xl font-bold text-gray-800 leading-tight">CSWDO Ligao</h1>
+          <p class="text-sm text-gray-500 -mt-1">City Social Welfare and Development Office</p>
+        </div>
+      </div>
+      
+      <nav class="space-x-6 text-gray-600 font-medium text-base hidden md:flex">
+        <a href="index.html" class="hover:text-blue-700 transition duration-300 border-b-2 border-transparent hover:border-blue-700">Home</a>
+        <a href="index.html#services" class="hover:text-blue-700 transition duration-300 border-b-2 border-transparent hover:border-blue-700">Services</a>
+        <!-- Forms Dropdown -->
+     <div class="relative">
+     <button onclick="toggleFormsDropdown()" class="flex items-center gap-1 hover:text-blue-700 transition border-b-2 border-transparent hover:border-blue-700 focus:outline-none">
+        Forms
+        <svg id="forms-dropdown-arrow" class="w-4 h-4 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+     </button>
+
+     <!-- Dropdown Menu -->
+        <div id="formsDropdown" class="absolute left-0 mt-2 w-72 bg-white shadow-lg rounded-md hidden z-50">
+        <a href="EDUCATIONAL-ASSISTANCE-form.pdf" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Educational Assistance Form</a>
+        <a href="MEDICAL-ASSISTANCE-form.pdf" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Medical Assistance Form</a>
+        <a href="LEDS-form.pdf" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">LEDS Form</a>
+        <a href="PWD-form.pdf" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">PWD Form</a>
+        <a href="SENIOR-CITIZEN-form.pdf" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Senior Citizen Form</a>
+        <a href="FINANCIAL-ASSISTANCE-form.pdf" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Financial Assistance Form</a>
+        <a href="BURIAL-ASSISTANCE-form.pdf" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Burial Assistance Form</a>
+        <a href="SOLO-PARENT-form.pdf" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Solo Parent Assistance Form</a>
+      </div>
+      </div>
+
+        <a href="index.html#process" class="hover:text-blue-700 transition duration-300 border-b-2 border-transparent hover:border-blue-700">Application Process</a>
+        <a href="index.html#contact" class="hover:text-blue-700 transition duration-300 border-b-2 border-transparent hover:border-blue-700">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto p-6 fade-in">
+
+    <!-- Back Button -->
+    <div class="mb-6">
+      <a href="index.html#services">
+        <button class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+          Back to Homepage
+        </button>
+      </a>
+    </div>
+
+    <!-- Requirements Section -->
+    <section id="requirements" class="bg-white p-6 rounded-lg shadow-lg mb-8 border-l-4 border-gray-700">
+      <h2 class="text-2xl font-bold mb-4 text-gray-700">Required Documents for Assistance</h2>
+
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">Ligao Educational Scholarship</h3>
+
+      <ul class="list-disc list-inside space-y-2 mb-4">
+        <li>Duly accomplished application form from the City Mayor’s Office or CSWDO</li>
+        <li>Latest report card or Certificate of Grades (minimum required GWA, usually 85% or above)</li>
+        <li>Certificate of Good Moral Character from the school</li>
+        <li>Proof of enrollment or Certificate of Registration</li>
+        <li>Photocopy of school ID or any valid government-issued ID</li>
+        <li>Barangay Certificate of Residency</li>
+        <li>Certificate of Indigency (if applying under financial need)</li>
+        <li>2 pcs. 1x1 ID picture</li>
+        <li>Endorsement from the school principal (if applicable)</li>
+      </ul>
+    </section>
+
+    <!-- Application Process Section -->
+    <section class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-gray-700">
+      <h2 class="text-2xl font-bold mb-4 text-gray-700">Application Process</h2>
+      <ol class="list-decimal list-inside space-y-2">
+        <li>Secure an Application Form by downloading it at our website.</li>
+        <li>Complete the form and gather all required supporting documents listed above.</li>
+        <li>Submit the application to the designated scholarship officer or program focal at CSWDO.</li>
+        <li>Undergo screening and evaluation by the Scholarship Committee based on academic performance, need, and interview results (if required).</li>
+        <li>Wait for the notification of results through call, text, or posting at the CSWDO or City Hall bulletin board.</li>
+        <li>Sign the Scholarship Agreement upon approval and attend any required orientation or contract signing.</li>
+        <li>Receive the financial assistance either through cheque release or cash disbursement at the City Treasurer’s Office, based on the release schedule.</li>
+      </ol>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-700 text-white p-4 text-center mt-8">
+    <p>&copy; 2025 CSWDO Ligao City. All rights reserved.</p>
+  </footer>
+
+<script>
+        function toggleFormsDropdown() {
+        const dropdown = document.getElementById("formsDropdown");
+        const arrow = document.getElementById("forms-dropdown-arrow");
+
+         dropdown.classList.toggle("hidden");
+        arrow.classList.toggle("rotate-180");
+        }
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function (event) {
+        const isInside = event.target.closest("#formsDropdown") || event.target.closest("#forms-dropdown-arrow") || event.target.closest("button");
+
+        if (!isInside) {
+        document.getElementById("formsDropdown").classList.add("hidden");
+        document.getElementById("forms-dropdown-arrow").classList.remove("rotate-180");
+        }
+    });
+</script>
+
+</body>
+
+</html>
