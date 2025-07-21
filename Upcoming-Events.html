@@ -20,7 +20,7 @@
       <!-- Logo + Title -->
       <div class="flex items-center space-x-4 mb-3 sm:mb-0">
         <div class="w-14 h-14 rounded-full overflow-hidden ring-2 ring-blue-500">
-          <img src="cswdo-logo.png" alt="CSWDO Logo" class="w-full h-full object-cover" />
+          <img src="images/cswdo-logo.png" alt="CSWDO Logo" class="w-full h-full object-cover" />
         </div>
         <div>
           <h1 class="text-xl font-bold text-gray-800">CSWDO Ligao</h1>
@@ -41,36 +41,106 @@
   <!-- Events Section -->
   <section class="pt-12 pb-16 px-4 max-w-7xl mx-auto">
     <div class="text-center mb-12">
-      <h1 class="text-4xl font-extrabold text-green-800 mb-3">Upcoming Events</h1>
-      <p class="text-lg text-green-900">Stay updated with our latest activities and community initiatives.</p>
+      <!-- Toggle Buttons -->
+      <div class="inline-flex rounded-full overflow-hidden shadow-md">
+        <button id="upcomingBtn" class="px-6 py-2 text-white bg-green-700 font-semibold">Upcoming Events</button>
+        <button id="previousBtn" class="px-6 py-2 text-green-700 bg-green-100 font-semibold">Previous Events</button>
+      </div>
+      
+      <p class="mt-4 text-lg text-green-900">Stay updated with our latest activities and community initiatives.</p>
     </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-      <!-- Event Card 1 -->
-      <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-        <img src="event1.jpg" alt="Event 1" class="w-full h-56 object-cover">
+  
+    <!-- Upcoming Events -->
+    <div id="upcomingEvents" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="images/SUNDAY-FUNDAY.png" alt="Event 1" class="w-full h-56 object-cover">
         <div class="p-6">
-          <h2 class="text-2xl font-bold text-green-800 mb-1">Community Outreach Program</h2>
-          <p class="text-sm text-gray-600 mb-2">Date: July 20, 2025</p>
-          <p class="text-sm text-gray-600 mb-4">Location: Barangay Paulog, Ligao City</p>
-          <p class="text-sm text-gray-700">Join us as we distribute essential goods and provide services to local families in need.</p>
+          <h2 class="text-2xl font-bold text-green-800 mb-1">Sunday FunDay for PWD</h2>
+          <p class="text-sm text-gray-600 mb-2">Date: To be announced</p>
+          <p class="text-sm text-gray-600 mb-4">Location: Greenbelt Pavillion Ligao City</p>
+          <p class="text-sm text-gray-700">Join us for a special Sunday Funday for PWD—a one-day celebration filled with fun, inclusion, and inspiration, where persons with disabilities take center stage!</p>
         </div>
       </div>
 
-      <!-- Event Card 2 -->
-      <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-        <img src="event2.jpg" alt="Event 2" class="w-full h-56 object-cover">
+    </div>
+  
+    <!-- Previous Events -->
+    <div id="previousEvents" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 hidden">
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="images/event2.jpg" alt="Event 2" class="w-full h-56 object-cover">
         <div class="p-6">
-          <h2 class="text-2xl font-bold text-green-800 mb-1">Nutrition Month Celebration</h2>
-          <p class="text-sm text-gray-600 mb-2">Date: August 5, 2025</p>
-          <p class="text-sm text-gray-600 mb-4">Location: Ligao City Hall Grounds</p>
-          <p class="text-sm text-gray-700">A fun-filled day of health awareness, food demos, and activities for children and parents alike.</p>
+          <h2 class="text-2xl font-bold text-green-800 mb-1">National Commision of Senior Citizens (NCSC) Cash Gift Distribution</h2>
+          <p class="text-sm text-gray-600 mb-2">Date: July 10, 2025</p>
+          <p class="text-sm text-gray-600 mb-4">Location: People's Hall, New City Hall Complex, Ligao City</p>
+          <p class="text-sm text-gray-700">The NCSC's special cash gift distribution for expanded centenarians act beneficiaries.</p>
         </div>
       </div>
 
-      <!-- Add more event cards as needed -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="images/event3.jpg" alt="Event 3" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-green-800 mb-1">Sustainable Livelihood Program </h2>
+          <p class="text-sm text-gray-600 mb-2">Date: July 03, 2025</p>
+          <p class="text-sm text-gray-600 mb-4">Location: Ligao City Gymnasium</p>
+          <p class="text-sm text-gray-700">Payout of Department of Social Welfare and Development (DSWD) livelihood settlement grant.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="images/event4.jpg" alt="Event 4" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-green-800 mb-1">DSWD-SLP Awarding of Cheques to SLPAs </h2>
+          <p class="text-sm text-gray-600 mb-2">Date: July 01, 2025</p>
+          <p class="text-sm text-gray-600 mb-4">Location: Office of the Mayor Conference Room</p>
+          <p class="text-sm text-gray-700">The Department of Social Welfare and Development (DSWD), thru its Sustainable Livelihood Program (SLP), awarded cheques to various Ligao-based SLP Associations.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="images/event5.jpg" alt="Event 5" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-green-800 mb-1">Nutritional Care Package Program </h2>
+          <p class="text-sm text-gray-600 mb-2">Date: June 18, 2025</p>
+          <p class="text-sm text-gray-600 mb-4">Location: People's Hall, New City Hall Complex, Ligao City</p>
+          <p class="text-sm text-gray-700">The City Government of Ligao, headed by Mayor Fernando V. Gonzalez, through the City Health Office – Nutrition Division, distributed Nutritional Care Packages to 130 clients with life-limiting conditions.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="images/event6.jpg" alt="Event 6" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-green-800 mb-1">Child Development Workers Week 2025</h2>
+          <p class="text-sm text-gray-600 mb-2">Date: June 05, 2025</p>
+          <p class="text-sm text-gray-600 mb-4">Location: Punta Almara Beach Resort, Sitio Tambac, Maonon, Ligao City</p>
+          <p class="text-sm text-gray-700">The City Government of Ligao, under the leadership of City Mayor Fernando V. Gonzalez, through the City Social Welfare and Development Office (CSWDO), proudly conducted a Capability Building and Team Building activity for our dedicated Child Development Workers.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="images/event7.jpg" alt="Event 7" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-green-800 mb-1">DSWD Social Pension Payout</h2>
+          <p class="text-sm text-gray-600 mb-2">Date: June 04, 2025</p>
+          <p class="text-sm text-gray-600 mb-4">Location: Ligao City Gymnasium</p>
+          <p class="text-sm text-gray-700">The Department of Social Welfare and Development (DSWD) conducted a social pension of senior citizens for the first and second quarters of 2025.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="images/event8.jpg" alt="Event 8" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-green-800 mb-1">Ligao Educational Scholarship (LEdS) Payout</h2>
+          <p class="text-sm text-gray-600 mb-2">Date: May 21-23, 2025</p>
+          <p class="text-sm text-gray-600 mb-4">Location: Kawa-kawa Function Hall, New City Hall Complex, Ligao City</p>
+          <p class="text-sm text-gray-700">The Department of Social Welfare and Development (DSWD) conducted a social pension of senior citizens for the first and second quarters of 2025.</p>
+        </div>
+      </div>
+
     </div>
+    
   </section>
+  
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-white py-12">
@@ -80,7 +150,7 @@
         <!-- Logo and Social -->
         <div class="text-center md:text-left">
         <a href="#">
-            <img src="cswdo-logo.png" alt="CSWDO Logo" class="w-20 h-20 mb-4 rounded-full mx-auto md:mx-0 hover:opacity-80 transition duration-300">
+            <img src="images/cswdo-logo.png" alt="CSWDO Logo" class="w-20 h-20 mb-4 rounded-full mx-auto md:mx-0 hover:opacity-80 transition duration-300">
         </a>
         <h3 class="text-xl font-semibold mb-2">CSWDO Ligao</h3>
         <p class="text-gray-400 mb-4">Providing social welfare services to the citizens of Ligao City.</p>
@@ -109,26 +179,55 @@
         <div>
           <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
           <ul class="space-y-2">
-              <li><a href="CSWDO-ligao.html" class="text-gray-400 hover:text-white">Home</a></li>
-              <li><a href="CSWDO-ligao.html#services" class="text-gray-400 hover:text-white">Services</a></li>
-              <li><a href="CSWDO-ligao.html#forms" class="text-gray-400 hover:text-white">Forms</a></li>
-              <li><a href="CSWDO-ligao.html#process" class="text-gray-400 hover:text-white">Application Process</a></li>
-              <li><a href="CSWDO-ligao.html#contact" class="text-gray-400 hover:text-white">Contact Us</a></li>
+              <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+              <li><a href="index.html#services" class="text-gray-400 hover:text-white">Services</a></li>
+              <li><a href="index.html#process" class="text-gray-400 hover:text-white">Application Process</a></li>
+              <li><a href="index.html#contact" class="text-gray-400 hover:text-white">Contact Us</a></li>
               <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
           </ul>
         </div>
     </div>
 
     <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-400">
-        <p>&copy; 2023 City Social Welfare and Development - Ligao City. All rights reserved.</p>
-        <p class="mt-2 text-sm">This is a sample website for demonstration purposes only.</p>
+        <p>&copy; 2025 City Social Welfare and Development - Ligao City. All rights reserved.</p>
+        
     </div>
     </div>
 </footer>
-  <!-- Floating Logo Link -->
-  <a href="CSWDO-ligao.html" class="fixed bottom-6 right-6 z-50">
-    <img src="cswdo-logo.png" alt="Back to Home" class="w-14 h-14 rounded-full ring-2 ring-green-700 hover:scale-105 transition duration-300 shadow-lg" />
-  </a>
 
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const upcomingBtn = document.getElementById('upcomingBtn');
+      const previousBtn = document.getElementById('previousBtn');
+      const upcomingEvents = document.getElementById('upcomingEvents');
+      const previousEvents = document.getElementById('previousEvents');
+  
+      upcomingBtn.addEventListener('click', () => {
+        upcomingEvents.classList.remove('hidden');
+        previousEvents.classList.add('hidden');
+  
+        upcomingBtn.classList.add('bg-green-700', 'text-white');
+        upcomingBtn.classList.remove('bg-green-100', 'text-green-700');
+
+        previousBtn.classList.remove('bg-green-700', 'text-white');
+        previousBtn.classList.add('bg-green-100', 'text-green-700');
+      });
+  
+      previousBtn.addEventListener('click', () => {
+        previousEvents.classList.remove('hidden');
+        upcomingEvents.classList.add('hidden');
+  
+        previousBtn.classList.add('bg-green-700', 'text-white');
+        previousBtn.classList.remove('bg-green-100', 'text-green-700');
+
+        upcomingBtn.classList.remove('bg-green-700', 'text-white');
+        upcomingBtn.classList.add('bg-green-100', 'text-green-700');
+      });
+    });
+  </script>
+  
+  
 </body>
 </html>
+
